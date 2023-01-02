@@ -1,0 +1,11 @@
+query getProductCategories($id: Float = 5) {
+    viewer {
+        product(filter: {productID: $id}) {
+            id: productID,
+            name,
+            category {
+                name
+            }
+        }
+    }
+}

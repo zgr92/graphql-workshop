@@ -1,0 +1,31 @@
+query getPaginatedProducts($price: Float){
+    viewer {
+        productPagination(
+            page: 1,
+            perPage: 10,
+            filter: {
+                categoryID: 1,
+                _operators: {
+                    unitPrice: {
+                        lte: $price
+                    }
+                }
+            },
+            sort: UNITPRICE_ASC) {
+            count,
+            items {
+                productID,
+                name,
+                unitPrice
+            },
+            pageInfo {
+                currentPage,
+                perPage,
+                pageCount,
+                itemCount,
+                hasNextPage,
+                hasPreviousPage
+            }
+        }
+    }
+}

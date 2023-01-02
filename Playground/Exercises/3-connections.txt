@@ -1,0 +1,1 @@
+Get first and last name of the employee's chief.

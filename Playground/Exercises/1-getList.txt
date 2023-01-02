@@ -1,0 +1,4 @@
+Get a list of employees with the following data:
+- EmployeeID
+- lastName
+- firstName

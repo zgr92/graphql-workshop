@@ -1,0 +1,6 @@
+subscription {
+    productUpdated {
+        _id,
+        name
+    }
+}

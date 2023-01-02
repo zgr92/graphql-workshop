@@ -1,0 +1,33 @@
+query getEmployeeSubordinates {
+    viewer {
+        employeeList {
+            firstName,
+            lastName,
+            title,
+            subordinates {
+                firstName,
+                lastName,
+                title,
+            }
+        }
+    }
+}
+
+
+
+query getEmployeeSubordinatesWithFragments{
+    viewer {
+        employeeList {
+            ...employeeFragment
+            subordinates {
+                ...employeeFragment
+            }
+        }
+    }
+}
+
+fragment employeeFragment on Employee {
+    firstName,
+    lastName,
+    title,
+}

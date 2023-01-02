@@ -1,0 +1,10 @@
+{
+    viewer
+    {
+        productList
+        {
+            productID,
+            name
+        }
+    }
+}

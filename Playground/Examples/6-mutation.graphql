@@ -1,0 +1,17 @@
+query getProductNames {
+    viewer {
+        productList {
+            _id,
+            name
+        }
+    }
+}
+
+mutation changeProductName {
+    updateProduct(_id: "63ad5493ef869ce93cbf55a3", record: {name: "Chef Anton's Cajun Seasoning"}) {
+        record {
+            _id,
+            name
+        }
+    }
+}

@@ -1,0 +1,40 @@
+query getCategoryWithProducts {
+  viewer {
+    categoryList(limit: 3) {
+      categoryID
+      name,
+      productList {
+        productID
+        name
+      }
+    }
+  }
+}
+
+query getProductBySkip{
+  viewer {
+    product(skip: 1) {
+      _id
+      productID,
+      name
+    }
+  }
+}
+
+
+query getProductById {
+  viewer {
+    product(filter: {productID: 1}) {
+      id: productID,
+      name
+    }
+  }
+}
+query getProductByIdWithVar($id: Float = 5) {
+  viewer {
+    product(filter: {productID: $id}) {
+      id: productID,
+      name
+    }
+  }
+}

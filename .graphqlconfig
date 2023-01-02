@@ -1,0 +1,15 @@
+{
+  "name": "Local Schema",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Remote SWAPI GraphQL Endpoint": {
+        "url": "https://localhost:3000/northwind",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      }
+    }
+  }
+}
