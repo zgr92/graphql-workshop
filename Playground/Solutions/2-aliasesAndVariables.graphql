@@ -1,0 +1,9 @@
+query getAllSalesReps{
+  viewer {
+    employeeList(filter: {title: "Sales Representative"}) {
+      firstName,
+      lastName,
+      title
+    }
+  }
+}

@@ -1,13 +1,12 @@
-query getEmployeeSubordinates {
+query getEmployeeChief {
     viewer {
         employeeList {
             firstName,
             lastName,
-            title,
-            subordinates {
+            title
+            chief {
                 firstName,
-                lastName,
-                title,
+                lastName
             }
         }
     }
@@ -19,7 +18,7 @@ query getEmployeeSubordinatesWithFragments{
     viewer {
         employeeList {
             ...employeeFragment
-            subordinates {
+            chief {
                 ...employeeFragment
             }
         }
@@ -28,6 +27,6 @@ query getEmployeeSubordinatesWithFragments{
 
 fragment employeeFragment on Employee {
     firstName,
-    lastName,
+    surname: lastName,
     title,
 }

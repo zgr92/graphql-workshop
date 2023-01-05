@@ -1,0 +1,13 @@
+query getEmployeeChief {
+    viewer {
+        employeeList {
+            firstName,
+            lastName,
+            title
+            chief {
+                firstName,
+                lastName
+            }
+        }
+    }
+}

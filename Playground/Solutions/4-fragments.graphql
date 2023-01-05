@@ -1,0 +1,26 @@
+query getList {
+    viewer
+    {
+        productList
+        {
+            ...productBasicInfo
+        }
+    }
+}
+
+query getProductCategories($id: Float = 5) {
+    viewer {
+        product(filter: {productID: $id}) {
+            ...productBasicInfo
+            category {
+                name
+            }
+        }
+    }
+}
+
+
+fragment productBasicInfo on Product {
+    productID,
+    name,
+}

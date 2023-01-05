@@ -1,16 +1,3 @@
-query getCategoryWithProducts {
-  viewer {
-    categoryList(limit: 3) {
-      categoryID
-      name,
-      productList {
-        productID
-        name
-      }
-    }
-  }
-}
-
 query getProductBySkip{
   viewer {
     product(skip: 1) {

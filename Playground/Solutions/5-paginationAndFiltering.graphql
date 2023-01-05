@@ -1,0 +1,21 @@
+query getPaginatedEmployees {
+    viewer {
+        employeePagination(
+            page: 3,
+            perPage: 3,
+            sort: LASTNAME_DESC) {
+            count,
+            items {
+                lastName,
+            },
+            pageInfo {
+                currentPage,
+                perPage,
+                pageCount,
+                itemCount,
+                hasNextPage,
+                hasPreviousPage
+            }
+        }
+    }
+}

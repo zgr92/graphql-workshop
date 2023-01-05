@@ -1,4 +1,4 @@
-query getPaginatedProducts($price: Float){
+query getPaginatedProducts($price: Float = 20.00){
     viewer {
         productPagination(
             page: 1,

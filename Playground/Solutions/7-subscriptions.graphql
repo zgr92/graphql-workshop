@@ -1,0 +1,7 @@
+subscription {
+    employeeUpdated {
+        _id,
+        firstName,
+        lastName
+    }
+}

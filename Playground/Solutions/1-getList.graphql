@@ -1,0 +1,11 @@
+{
+    viewer
+    {
+        employeeList
+        {
+            employeeID,
+            firstName,
+            lastName,
+        }
+    }
+}

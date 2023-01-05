@@ -1,0 +1,19 @@
+query getEmployees {
+    viewer {
+        employeeList {
+            _id,
+            firstName,
+            lastName
+        }
+    }
+}
+
+mutation changeEmployeeName {
+    updateEmployee(_id: "63b422f840949d01b0415df7", record: {firstName: "Steven"}) {
+        record {
+            _id,
+            firstName,
+            lastName
+        }
+    }
+}
