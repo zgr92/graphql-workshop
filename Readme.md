@@ -17,7 +17,10 @@ $ git clone git@github.com:graphql-compose/graphql-compose-examples.git
 $ yarn install
 $ yarn seed && yarn dev
 ```
-open http://localhost:3000, go to http://localhost:3000/northwind, a graphQL playground should be displayed
+open http://localhost:3000, go to http://localhost:3000/northwind, a graphQL playground should be displayed.
+Copy the query from the `Examples` folder, paste it to the editor on the left column. Run the query.
+Make sure that you get the results. If not, make sure you did all of the previous steps in this instruction,
+for example check if your MongoDB process is running.
 
 ## Run server
 ```shell

@@ -36,7 +36,7 @@ const getProductsQuery = () => `query getPaginatedProducts($price: Float){
 
 const queryVariables = (price) => `
     {
-        "price": ${price}
+        "price": 10.00
     }
 `
 

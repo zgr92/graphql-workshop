@@ -1,6 +1,6 @@
-query getAllSalesReps{
+query getAllSalesReps($title: String){
   viewer {
-    employeeList(filter: {title: "Sales Representative"}) {
+    employeeList(filter: {title: $title}) {
       firstName,
       lastName,
       title

@@ -1,3 +1,3 @@
 1. Create a fragment that will get Product's "productID" and name.
 2. Copy "getList" query from the first example and use the crated fragment in it.
-3. Copy "getCategoryWithProducts" from the second example and use the created fragment in it.
+3. Copy "getProductCategories" from the third example and use the created fragment in it. Add "id" alias to the fragment.
