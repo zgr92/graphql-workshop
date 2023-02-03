@@ -31,8 +31,19 @@ $ yarn install
 $ yarn seed && yarn dev
 ```
 open http://localhost:3000, go to http://localhost:3000/northwind, a graphQL playground should be displayed.
-Copy the query from the `Playground/Examples` folder (in this repository, not the graphql-compose-examples), paste it to the editor on the left column. Run the query.
-Make sure that you get the results. If not, make sure you did all the previous steps in this instruction,
+Copy this query:
+```graphql
+{
+    viewer {
+        productList {
+            productID
+            name
+        }
+    }
+}
+```
+and paste it to the editor in the left column. Run the query.
+Make sure that you get the results on the right column. If not, make sure you did all the previous steps in this instruction,
 for example check if your MongoDB process is running.
 
 ## Run server
@@ -42,6 +53,6 @@ $ yarn dev
 Open http://localhost:3000/northwind.
 
 # Structure
-Folder `Playground` contains example queries and excises that will be used in GraphQL playground to learn and practice some GraphQL features.
-`Solution` folder in `Playground` contains solved excercises, so it's better if you don't go there unless you tried to do the exercise first.
-In `App` folder an example of GraphQL query usage on a website with Javascript can be found.
+This repository contains folder `Playground` with example queries and excises that will be used in GraphQL playground to learn and practice some GraphQL features.
+`Solution` folder in `Playground` contains solved exercises, so it's better if you don't go there unless you tried to do the exercise first.
+In `App` folder you can find an example of GraphQL query usage on a website written in Javascript.
