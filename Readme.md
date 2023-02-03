@@ -20,7 +20,7 @@ $ git clone git@github.com:graphql-compose/graphql-compose-examples.git
 ````
 or
 ```shell
-$ git clone git@github.com:graphql-compose/graphql-compose-examples.git
+$ git clone https://github.com/graphql-compose/graphql-compose-examples.git
 ````
 or simply download zip file by clicking on "code" button
 ### Setup
